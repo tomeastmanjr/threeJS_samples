@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>working-sphere-test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="./js/three.min.js"></script>
+    <script src="./js/three.js-master/examples/js/controls/OrbitControls.js"></script>
+    <script src="./js/three.js-master/examples/js/loaders/OBJLoader.js"></script>
+    <script src="./js/Detector.js">
+    // Even though this is becoming less and less of a problem, some devices or browsers may still not support WebGL. The following method allows you to check if it is supported and display a message to the user if it is not
+        if (Detector.webgl) {
+            init();
+            animate();
+        } else {
+            var warning = Detector.getWebGLErrorMessage();
+            document.getElementById('container').appendChild(warning);
+        }
+    </script>
+    
+</head>
+<body>
+    <p class="label">Use the mouse to rotate and scroll to zoom.</p>
+    <script src="./js/test-sphere-collision.js"></script>
+</body>
+</html>
